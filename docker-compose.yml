@@ -1,0 +1,10 @@
+services:
+  demo-app:
+    build: .
+    container_name: demo-app
+    stdin_open: true   # Keep stdin open for interactive input
+    tty: true          # Allocate a pseudo-TTY for interactive input
+    env_file:
+      - .env
+    volumes:
+      - ./credentials:/app/credentials
