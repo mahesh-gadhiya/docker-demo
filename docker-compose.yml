@@ -1,6 +1,6 @@
 services:
   demo-app:
-    build: .
+    image: "jedimyke/docker-demo-app:latest"
     container_name: demo-app
     stdin_open: true   # Keep stdin open for interactive input
     tty: true          # Allocate a pseudo-TTY for interactive input
